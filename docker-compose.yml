@@ -21,6 +21,6 @@ services:
     command: daemon --docker
     labels:
       # Run 'docker start -a nuvio-mdblist-sync' every day at 00:00 (Midnight)
-      ofelia.job-run.nuvio-daily.schedule: "0 0 0 * * *"
+      ofelia.job-run.nuvio-daily.schedule: "0 * * * * *"
       ofelia.job-run.nuvio-daily.container: "nuvio-mdblist-sync"
     restart: always
